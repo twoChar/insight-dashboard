@@ -1,6 +1,7 @@
 import { NavLink, useLocation } from "react-router-dom";
 import {
   TrendingUp, Tags, BarChart3, Users, Package, Droplets, Sparkles,
+  Building2, Wrench, Network,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -11,6 +12,9 @@ const navItems = [
   { to: "/dealer", label: "Dealer Performance", icon: Users },
   { to: "/inventory", label: "Inventory & Working Capital", icon: Package },
   { to: "/margin", label: "Margin Leakage", icon: Droplets },
+  { to: "/capex", label: "CAPEX Analysis", icon: Building2 },
+  { to: "/tool-utilisation", label: "Tool Utilisation (CFO)", icon: Wrench },
+  { to: "/volume", label: "Volume Analysis", icon: Network },
 ];
 
 export function Sidebar() {

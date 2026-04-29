@@ -10,6 +10,9 @@ import SalesVolume from "./pages/SalesVolume";
 import DealerPerformance from "./pages/DealerPerformance";
 import Inventory from "./pages/Inventory";
 import MarginLeakage from "./pages/MarginLeakage";
+import CapexAnalysis from "./pages/CapexAnalysis";
+import ToolUtilisation from "./pages/ToolUtilisation";
+import VolumeAnalysis from "./pages/VolumeAnalysis";
 import NotFound from "./pages/NotFound.tsx";
 
 const queryClient = new QueryClient();
@@ -28,6 +31,9 @@ const App = () => (
             <Route path="/dealer" element={<DealerPerformance />} />
             <Route path="/inventory" element={<Inventory />} />
             <Route path="/margin" element={<MarginLeakage />} />
+            <Route path="/capex" element={<CapexAnalysis />} />
+            <Route path="/tool-utilisation" element={<ToolUtilisation />} />
+            <Route path="/volume" element={<VolumeAnalysis />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </FilterProvider>

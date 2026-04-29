@@ -6,72 +6,73 @@
 
 @layer base {
   :root {
-    --background: 220 25% 98%;
-    --foreground: 215 30% 12%;
+    /* Dark navy blue theme — site-wide */
+    --background: 215 45% 8%;
+    --foreground: 215 25% 94%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 215 30% 12%;
+    --card: 215 40% 11%;
+    --card-foreground: 215 25% 94%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 215 30% 12%;
+    --popover: 215 42% 12%;
+    --popover-foreground: 215 25% 94%;
 
-    /* Deep consulting navy */
-    --primary: 215 60% 18%;
-    --primary-foreground: 0 0% 100%;
-    --primary-glow: 215 70% 35%;
+    /* Bright navy/blue primary on dark */
+    --primary: 210 90% 60%;
+    --primary-foreground: 215 45% 8%;
+    --primary-glow: 210 95% 70%;
 
-    --secondary: 215 20% 95%;
-    --secondary-foreground: 215 40% 20%;
+    --secondary: 215 35% 16%;
+    --secondary-foreground: 215 25% 94%;
 
-    --muted: 215 20% 96%;
-    --muted-foreground: 215 15% 45%;
+    --muted: 215 35% 15%;
+    --muted-foreground: 215 18% 65%;
 
     /* Sophisticated teal accent */
-    --accent: 185 70% 38%;
-    --accent-foreground: 0 0% 100%;
+    --accent: 185 75% 50%;
+    --accent-foreground: 215 45% 8%;
 
-    --success: 152 60% 38%;
-    --success-foreground: 0 0% 100%;
+    --success: 152 65% 48%;
+    --success-foreground: 215 45% 8%;
 
-    --warning: 38 92% 50%;
-    --warning-foreground: 215 30% 12%;
+    --warning: 38 95% 58%;
+    --warning-foreground: 215 45% 8%;
 
-    --destructive: 0 75% 52%;
+    --destructive: 0 78% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 215 20% 90%;
-    --input: 215 20% 90%;
-    --ring: 215 60% 25%;
+    --border: 215 30% 20%;
+    --input: 215 30% 20%;
+    --ring: 210 90% 60%;
 
     --radius: 0.875rem;
 
-    /* Chart palette - consulting style */
-    --chart-1: 215 60% 25%;
-    --chart-2: 185 70% 38%;
-    --chart-3: 38 85% 55%;
-    --chart-4: 268 50% 50%;
-    --chart-5: 12 75% 55%;
-    --chart-6: 152 50% 42%;
+    /* Chart palette - tuned for dark navy background */
+    --chart-1: 210 90% 62%;
+    --chart-2: 185 75% 52%;
+    --chart-3: 38 95% 60%;
+    --chart-4: 268 70% 65%;
+    --chart-5: 12 80% 62%;
+    --chart-6: 152 65% 52%;
 
     /* Gradients & shadows */
-    --gradient-primary: linear-gradient(135deg, hsl(215 60% 18%), hsl(215 70% 28%));
-    --gradient-accent: linear-gradient(135deg, hsl(185 70% 38%), hsl(195 75% 45%));
-    --gradient-subtle: linear-gradient(180deg, hsl(220 25% 99%), hsl(220 25% 97%));
+    --gradient-primary: linear-gradient(135deg, hsl(215 55% 14%), hsl(210 75% 28%));
+    --gradient-accent: linear-gradient(135deg, hsl(185 75% 45%), hsl(210 85% 55%));
+    --gradient-subtle: linear-gradient(180deg, hsl(215 45% 9%), hsl(215 45% 7%));
 
-    --shadow-xs: 0 1px 2px hsl(215 30% 12% / 0.04);
-    --shadow-sm: 0 2px 8px -2px hsl(215 30% 12% / 0.06);
-    --shadow-md: 0 8px 24px -8px hsl(215 30% 12% / 0.10);
-    --shadow-lg: 0 20px 40px -12px hsl(215 30% 12% / 0.15);
-    --shadow-elegant: 0 4px 20px -4px hsl(215 60% 18% / 0.12);
+    --shadow-xs: 0 1px 2px hsl(215 60% 4% / 0.4);
+    --shadow-sm: 0 2px 8px -2px hsl(215 60% 4% / 0.5);
+    --shadow-md: 0 8px 24px -8px hsl(215 60% 4% / 0.6);
+    --shadow-lg: 0 20px 40px -12px hsl(215 60% 4% / 0.7);
+    --shadow-elegant: 0 4px 20px -4px hsl(210 90% 50% / 0.18);
 
-    --sidebar-background: 215 55% 14%;
+    --sidebar-background: 215 55% 7%;
     --sidebar-foreground: 215 20% 85%;
-    --sidebar-primary: 185 70% 45%;
-    --sidebar-primary-foreground: 215 60% 14%;
-    --sidebar-accent: 215 50% 20%;
+    --sidebar-primary: 185 75% 55%;
+    --sidebar-primary-foreground: 215 60% 8%;
+    --sidebar-accent: 215 45% 14%;
     --sidebar-accent-foreground: 0 0% 100%;
-    --sidebar-border: 215 45% 22%;
-    --sidebar-ring: 185 70% 45%;
+    --sidebar-border: 215 40% 16%;
+    --sidebar-ring: 185 75% 55%;
   }
 
   .dark {
