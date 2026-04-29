@@ -1,7 +1,7 @@
 import { useMemo } from "react";
 import {
   BarChart, Bar, XAxis, YAxis, CartesianGrid, ResponsiveContainer, Tooltip, Legend,
-  LineChart, Line,
+  LineChart, Line, Cell,
 } from "recharts";
 import { DashboardLayout } from "@/components/layout/DashboardLayout";
 import { KPICard, ChartCard, InsightCard } from "@/components/cards/Cards";
@@ -133,7 +133,7 @@ export default function VolumeAnalysis() {
               <Tooltip contentStyle={chartTooltipStyle} formatter={(v: number) => formatNumber(v)} />
               <Bar dataKey="units" radius={[0, 4, 4, 0]}>
                 {funnel.map((_, i) => (
-                  <Bar key={i} dataKey="units" fill={CHART_COLORS[i]} />
+                  <Cell key={i} fill={CHART_COLORS[i]} />
                 ))}
               </Bar>
             </BarChart>
@@ -163,7 +163,7 @@ export default function VolumeAnalysis() {
               <Tooltip contentStyle={chartTooltipStyle} />
               <Bar dataKey="conversion" radius={[4, 4, 0, 0]}>
                 {regionData.map((r, i) => (
-                  <Bar key={i} fill={r.conversion < 70 ? "hsl(var(--destructive))" : r.conversion < 80 ? "hsl(var(--warning))" : "hsl(var(--success))"} />
+                  <Cell key={i} fill={r.conversion < 70 ? "hsl(var(--destructive))" : r.conversion < 80 ? "hsl(var(--warning))" : "hsl(var(--success))"} />
                 ))}
               </Bar>
             </BarChart>
